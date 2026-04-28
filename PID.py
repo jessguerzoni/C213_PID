@@ -1,6 +1,6 @@
 
 from scipy.io import loadmat
 
-data = loadmat('Dataset_Grupo3_c213.mat')
+data = loadmat('Dataset_Grupo4_c213.mat')
 
 print(data.keys())
