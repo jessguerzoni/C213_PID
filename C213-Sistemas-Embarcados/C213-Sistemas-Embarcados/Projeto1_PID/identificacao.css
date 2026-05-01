@@ -1,0 +1,18 @@
+body {
+    background: #e6e6e6;
+    font-family: Arial;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    width: 80%;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    margin: 5px;
+}

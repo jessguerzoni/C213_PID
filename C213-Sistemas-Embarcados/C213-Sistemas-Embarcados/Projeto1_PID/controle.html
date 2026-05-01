@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Controle PID</title>
+    <link rel="stylesheet" href="controle.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Controle PID</h1>
+
+    <div class="tabs">
+        <button onclick="window.location.href='inicio.html'">Início</button>
+        <button onclick="window.location.href='identificacao.html'">Identificação</button>
+        <button class="active">Controle PID</button>
+    </div>
+
+    <!-- MODO -->
+    <div class="modo">
+        <label><input type="radio" name="modo" value="auto" checked onchange="trocarModo()"> Automático</label>
+        <label><input type="radio" name="modo" value="manual" onchange="trocarModo()"> Manual</label>
+    </div>
+
+    <div class="layout">
+
+        <!-- GRÁFICO -->
+        <div class="grafico">
+            <canvas id="grafico"></canvas>
+        </div>
+
+        <!-- PAINEL -->
+        <div class="painel">
+
+            <h3>Parâmetros PID</h3>
+
+            <div id="auto">
+                <select id="metodo">
+                    <option value="zn">Ziegler-Nichols</option>
+                    <option value="cc">Cohen-Coon</option>
+                </select>
+            </div>
+
+        <div id="manual" style="display:none;">
+            <input type="text" id="kp" placeholder="Kp (ex: 2.5)">
+            <input type="text" id="ti" placeholder="Ti (ex: 6.3)">
+            <input type="text" id="td" placeholder="Td (ex: 1.2)">
+        </div>
+
+            <h3>Parâmetros de Controle</h3>
+
+            <input type="number" id="sp" placeholder="Setpoint" value="1">
+            <input type="text" id="mp" placeholder="Overshoot" disabled>
+
+            <button onclick="simular()">Simular</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

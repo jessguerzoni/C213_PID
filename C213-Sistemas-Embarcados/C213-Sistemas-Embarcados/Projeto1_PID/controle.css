@@ -1,0 +1,82 @@
+body {
+    background: #e6e6e6;
+    font-family: Arial;
+}
+
+.container {
+    background: white;
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.tabs button {
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.tabs .active {
+    background: white;
+    font-weight: bold;
+}
+
+.modo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.layout {
+    display: flex;
+    gap: 20px;
+}
+
+.grafico {
+    flex: 2;
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.painel {
+    flex: 1;
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.painel input,
+.painel select {
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
